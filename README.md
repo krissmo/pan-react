@@ -1,16 +1,52 @@
-# React + Vite
+Panadería Dulce Pan
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web desarrollado en React para la panadería Dulce Pan, enfocado en mostrar sus productos artesanales, ofertas del día y facilitar el contacto con los clientes.
 
-Currently, two official plugins are available:
+El proyecto actualmente incluye la **página Home**, con diseño moderno, navegación clara y enfoque visual en los productos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+Vista previa
 
-## React Compiler
+Página principal con:
+- Banner de bienvenida
+- Mensaje principal de la panadería
+- Botón para explorar el catálogo
+- Sección de ofertas del día
+- Barra de navegación (Inicio, Catálogo, Sobre, Contacto)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- CSS
+- Imágenes optimizadas
+- Navegación por componentes
+
+---
+Instalación y uso
+
+
+
+1. Clona el repositorio:
+git clone https://github.com/krissmo/pan-react.git
+
+3. Entra al proyecto:
+cd pan-react
+
+5. Instala las dependencias:
+npm install
+
+7. Ejecuta el proyecto en modo desarrollo:
+npm run dev
+
+9. Abre el navegador en:
+http://localhost:5173
+
+--
+
+Estado del proyecto
+En desarrollo
+
+
