@@ -1,0 +1,149 @@
+.contacto-page {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contacto-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contacto-header h1 {
+  color: #8B4513; /* tono marrón panadería */
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-card, .form-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 1.8rem;
+}
+
+.info-card h2, .form-card h2 {
+  color: #6B4423;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.icon {
+  color: #8B4513;
+  font-size: 1.6rem;
+  margin-top: 0.3rem;
+}
+
+.info-item strong {
+  display: block;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.info-item p {
+  margin: 0;
+  color: #555;
+}
+
+/* Formulario */
+.form-group {
+  margin-bottom: 1.4rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #8B4513;
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.btn-enviar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  width: 100%;
+  padding: 1rem;
+  background: #8B4513;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+  background: #6B4423;
+}
+
+.btn-icon {
+  font-size: 1.1rem;
+}
+
+/* Mapa placeholder */
+.map-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.map-section h3 {
+  color: #6B4423;
+  margin-bottom: 1rem;
+}
+
+.map-placeholder {
+  background: #f8f5f2;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  padding: 4rem 2rem;
+  color: #777;
+  font-style: italic;
+}

@@ -1,0 +1,93 @@
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+}
+
+.filters {
+  background: #FFF3CD;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.filters h3 {
+  color: #8B4513;
+  margin-bottom: 1rem;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters li {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.filters li:hover {
+  color: #556B2F;
+  font-weight: bold;
+  background: #f5deb3;
+}
+
+.filters li.active {
+  background: #556B2F;
+  color: white;
+  font-weight: bold;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.product-card:hover button {
+  background: #3d4f21;
+}
+
+.product-card h4 {
+  font-family: 'Playfair Display', serif;
+  color: #8B4513;
+  margin: 1rem 0 0.5rem;
+}
+
+.product-card p {
+  font-size: 1.2rem;
+  color: #556B2F;
+}
+
+.image-placeholder {
+  background: #eaeaea;
+  height: 140px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-image {
+  width: 100%;
+  height: 140px; /* mismo tamaño que tu placeholder */
+  object-fit: cover; /* ajusta la imagen sin deformarla */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}

@@ -59,6 +59,9 @@ body {
   color: white;
 }
 
+
+
+
 .hero-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -152,4 +155,91 @@ body {
   text-align: center;
   padding: 2rem 0;
   margin-top: 4rem;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Botones del carrito */
+.cart-btn {
+  background: #8B4513;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.cart-btn:hover {
+  background: #6f3610;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Quitar animación de tarjetas SOLO en pedidos */
+.pedidos .product-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.pedidos .product-card {
+  box-shadow: none !important;
+}
+
+.pedidos .product-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Botones + - y Quitar */
+.pedidos .cart-btn {
+  box-shadow: none !important;
+}
+
+.pedidos .cart-btn:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ===============================
+   RESET COMPLETO DE BOTONES EN PEDIDOS
+   =============================== */
+
+.pedidos button {
+  background: none !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+  box-shadow: none !important;
+  transform: none !important;
+  cursor: pointer;
+}
+
+/* Hover neutro */
+.pedidos button:hover {
+  background: #f2f2f2 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Botones + - */
+.pedidos button:not(.cart-btn) {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+
+/* Botón Quitar */
+.pedidos .cart-btn {
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
 }
